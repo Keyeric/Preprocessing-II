@@ -206,11 +206,11 @@ nav div {
   align-items: space-between;
   width: 30%;
   padding: 0 auto;
+  margin: 0 auto;
 }
 @media (max-width: 50rem) {
   nav div {
     width: 80%;
-    margin: 0 auto;
   }
 }
 nav div a {
@@ -249,15 +249,19 @@ nav div a {
   .top {
     width: 90%;
   }
+  .top img {
+    height: 20vh;
+  }
 }
 @media (max-width: 50rem) {
   .top h2 {
     margin: 0 auto;
-    margin-top: 2%;
+    margin-top: 1rem;
   }
 }
 .home .content-section {
   margin: 0 auto;
+  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -273,6 +277,7 @@ nav div a {
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
+  margin: 0 auto;
 }
 @media (max-width: 50rem) {
   .home .content-section .text-content {
@@ -282,6 +287,7 @@ nav div a {
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+  margin: 0 auto;
 }
 @media (max-width: 50rem) {
   .home .content-section .img-content {
@@ -294,6 +300,8 @@ nav div a {
 .home .inverse-content {
   padding-bottom: 3rem;
   border-bottom: 0.2rem dashed #C0C0C0;
+  margin: 0 auto;
+  margin-top: 1rem;
 }
 @media (max-width: 50rem) {
   .home .inverse-content {
@@ -304,14 +312,16 @@ nav div a {
 .home .inverse-content .text-content {
   padding-left: 1%;
   padding-right: 0;
+  margin: 0 auto;
 }
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+  margin: 0 auto;
 }
 .home .content-destination {
   width: 75%;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 @media (max-width: 50rem) {
   .home .content-destination {
@@ -326,6 +336,7 @@ nav div a {
   border-top: 0.2rem dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
 }
 @media (max-width: 50rem) {
   .home .content-pick {

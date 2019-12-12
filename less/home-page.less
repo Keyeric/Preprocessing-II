@@ -9,12 +9,16 @@
 
   @media @phone{
     width:90%;
+
+    img{
+      height:20vh;
+    }
   }//closes 50rem top
 
   h2{
     @media @phone{
       .m();
-      margin-top:2%;
+      .mt();
     }//closes 50rem h2
   }//closes h2
 }//closes top (header: welcome to fun bus)
@@ -23,6 +27,7 @@
 
   .content-section {
     .m();
+    .mt();
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -37,6 +42,7 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      .m();
 
       @media @phone{
         width:90%;
@@ -46,6 +52,7 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .m();
 
       @media @phone{
         width:90%;
@@ -60,6 +67,8 @@
   .inverse-content {
     padding-bottom: 3rem;
     border-bottom: 0.2rem dashed @navigation-border;
+    .m();
+    .mt();
 
     @media @phone{
       display: flex;
@@ -69,19 +78,22 @@
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+      .m();
 
     }//close inverse content text-content
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
+      .m();
 
     }//closes inverse content img-content
   }//closes home inverse content
 
   .content-destination {
     width: 75%;
-    .m();
+    margin: 1rem auto;
+    
 
     @media @phone{
       width: 90%;
@@ -97,6 +109,7 @@
     border-top: 0.2rem dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    .m();
 
     @media @phone{
       .flex(center,center);
