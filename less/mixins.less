@@ -3,22 +3,26 @@
 .flex(@just, @align){
     display:flex;
     justify-content: @just;
-    align-items: center;
-}
+    align-items: @align;
+}//closes flex-in
 
 
-.Muffin(@back:@eastern-blue, @width: 200px, @font:@white){
+.Muffin(@back:@eastern-blue, @width: 95%, @font:@white){
     .flex(center, center);
     background-color: @back;
     width: @width;
     color: @font;
-    height: 50px;
+    height: 5rem;
     font-size: 2rem;
-    border-radius: 15px;
+    border-radius: 1.5rem;
     cursor: pointer;
 
     @media @phone{
-        width: 350px;
+        width: 100%;
         margin: 0 auto;
-    }//closes 500px muffin button
-}
+    }//closes 50rem muffin button
+}//closes Muffin button
+
+.m(){
+    margin:0 auto;
+}//closes m
