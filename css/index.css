@@ -182,7 +182,6 @@ img {
   margin: 0 auto;
 }
 nav {
-  border: 0.1rem solid red;
   width: 50%;
   display: flex;
   justify-content: space-evenly;
@@ -203,7 +202,6 @@ nav {
   }
 }
 nav div {
-  border: 1rem dotted blue;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
