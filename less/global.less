@@ -2,16 +2,20 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto');
+@mainFont: 'Roboto', sans-serif;
+@headFont: 'Indie Flower', cursive;
+
 html {
   font-size: 62.5%;
 }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: @mainFont;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: @headFont;
 }
 
 h1 {
