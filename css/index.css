@@ -180,6 +180,21 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1.5px dashed black;
+}
+nav div {
+  width: 20%;
+}
+nav div a {
+  padding: 1%;
+  margin: 0 5%;
+  text-decoration: none;
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
