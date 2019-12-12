@@ -6,6 +6,7 @@
     align-items: center;
 }
 
+
 .Muffin(@back:@eastern-blue, @width: 200px, @font:@white){
     .flex(center, center);
     background-color: @back;
@@ -15,4 +16,9 @@
     font-size: 2rem;
     border-radius: 15px;
     cursor: pointer;
+
+    @media @phone{
+        width: 350px;
+        margin: 0 auto;
+    }//closes 500px muffin button
 }
