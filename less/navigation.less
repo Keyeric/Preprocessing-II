@@ -1,5 +1,7 @@
 // Navigation Styles here
 nav{
+    border:0.1rem solid red;
+    width:50%;
     .flex(space-evenly, center);
     border-bottom: 0.2 dashed @navigation-border;
     .m();
@@ -17,13 +19,14 @@ nav{
     }//closes nav h1
     
     div{
-        .flex(space-between,space-between);
-        width: 30%;
-        padding: 0 auto;
-        .m();
+        border:1rem dotted blue;
+        .flex(space-evenly,center);
+        width: 50%;
+        margin-left:20rem;
 
         @media @phone{
             width: 80%;
+            .m();
         }//closes 50rem nav div
 
         a{
