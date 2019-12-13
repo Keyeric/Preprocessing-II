@@ -2,16 +2,21 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Roboto');
+@mainFont: 'Roboto', sans-serif;
+@headFont: 'Indie Flower', cursive;
+
 html {
   font-size: 62.5%;
+  width: 100%;
 }
 
 html, body {
-  font-family: 'Roboto', sans-serif;
+  font-family: @mainFont;
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: @headFont;
 }
 
 h1 {
@@ -20,18 +25,18 @@ h1 {
 
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 
 h4 {
   font-size: 2.5rem;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 }
 
 img {
@@ -40,7 +45,7 @@ img {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 80rem;
   width: 100%;
   margin: 0 auto;
 }

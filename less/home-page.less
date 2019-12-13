@@ -1,61 +1,133 @@
+
+.top{
+  .m();
+  .flex(center, center);
+  flex-direction: column;
+  padding: 0 auto;
+  width: 63%;
+  border-bottom: 0.2rem dashed @navigation-border;
+
+  @media @phone{
+    width:90%;
+
+    img{
+      height:20vh;
+    }
+  }//closes 50rem top
+
+  h2{
+    @media @phone{
+      .m();
+      .mt();
+    }//closes 50rem h2
+  }//closes h2
+}//closes top (header: welcome to fun bus)
+
 .home {
 
   .content-section {
-    margin: 30px 0;
+    .m();
+    .mt();
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @phone{
+      .flex(flex-start, flex-start);
+      flex-direction: column;
+    }//closes 50rem content section
 
    
     
     .text-content {
       width: 48%;
       padding-right: 1%;
-    }
+      .m();
+
+      @media @phone{
+        width:90%;
+      }//closes 50rem text-content
+    }//closes content section text-content
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      .m();
+
+      @media @phone{
+        width:90%;
+      }//closes 50rem img-content
 
       img {
-        border-radius: 10px;
-      }
-    }
-  }
+        border-radius: 1rem;
+      }//closes img-content img
+    }//closes content section img-content
+  }//closes home content section
 
   .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
+    padding-bottom: 3rem;
+    border-bottom: 0.2rem dashed @navigation-border;
+    .m();
+    .mt();
+
+    @media @phone{
+      display: flex;
+      flex-direction: column-reverse;
+    }//closes 50rem inverse content
 
     .text-content {
       padding-left: 1%;
       padding-right: 0;
-    }
+      .m();
+
+    }//close inverse content text-content
 
     .img-content {
       padding-right: 1%;
       padding-left: 0;
-    }
-  }
+      .m();
+
+    }//closes inverse content img-content
+  }//closes home inverse content
 
   .content-destination {
     width: 75%;
-    margin: 0 auto 30px;
+    margin: 1rem auto;
+    
+
+    @media @phone{
+      width: 90%;
+    }//closes 50rem content destination
 
     img {
-      border-radius: 10px;
-    }
-  }
+      border-radius: 1rem;
+    }//closes content destination img
+  }//closes home content destination
 
   .content-pick {
-    padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
+    padding-top: 3rem;
+    border-top: 0.2rem dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    .m();
+
+    @media @phone{
+      .flex(center,center);
+      flex-direction: column;
+    }//closes 50rem content pick
 
     .destination {
       width: 30%;
-      margin-bottom: 30px;
-    }
-  }
-}// home
+      .m();
+      margin-bottom: 3rem;
+
+      @media @phone{
+        width:70%;
+      }
+
+      .btn{
+        .Muffin();
+      }//closes muffin button
+    }//closes content pick destination
+  }// closes home content pick
+}// closes home

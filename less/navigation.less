@@ -1,1 +1,41 @@
 // Navigation Styles here
+nav{
+    width:50%;
+    .flex(space-evenly, center);
+    border-bottom: 0.2 dashed @navigation-border;
+    .m();
+    
+    @media @phone{
+        flex-direction: column;
+    }//closes 50rem nav
+
+    h1{
+        @media @phone{
+            font-size:3rem;
+            .m();
+            margin-bottom:2%;
+        }//closes 50rem nav h1
+    }//closes nav h1
+    
+    div{
+        .flex(space-evenly,center);
+        width: 50%;
+        margin-left:20rem;
+
+        @media @phone{
+            width: 80%;
+            .m();
+        }//closes 50rem nav div
+
+        a{
+            padding: 1rem;
+            .m();
+            text-decoration: none;
+            color: @shark;
+
+            @media @phone{
+                font-size: 1.5rem;
+            }//closes 50rem nav div a
+        }//closes nav div a
+    }//closes nav div
+}//closes nav
